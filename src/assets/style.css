@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wraper {
+  min-height: 100vh;
+  background: linear-gradient(#03142b, #335585);
+}
+
+.title {
+  font-family: 'Bungee Spice', sans-serif;
+  position: absolute;
+  font-size: 30px;
+  width: 40%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  border: 10px solid #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+.siderbar {
+  position: absolute;
+  width: 60px;
+  height: 100vh;
+  background: linear-gradient(#888888, #fff);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.siderbar:hover {
+  width: 300px;
+}
+
+.siderbar ul {
+  position: relative;
+  height: 100vh;
+}
+
+.siderbar ul li {
+  list-style: none;
+}
+
+.siderbar ul li:hover {
+  background-color: #3a89be;
+}
+
+.siderbar ul li a {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.siderbar ul li a .icon {
+  margin-bottom: 4px;
+  border: 1px solid #646464;
+  border-radius: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  color: #03142b;
+}
+
+.siderbar ul li a .text {
+  font-family: '微軟正黑體';
+  position: relative;
+  height: 60px;
+  display: flex;
+  font-size: 1em;
+  color: #03142b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-items: center;
+}
+
+.siderbar ul li.Logo {
+  margin-bottom: 50px;
+}
+
+.siderbar ul li.Logo .icon {
+  font-size: 3em;
+}
+
+.siderbar ul li.Logo .text {
+  font-size: 1.2em;
+  font-weight: 500;
+}
